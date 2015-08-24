@@ -10,7 +10,7 @@ package model;
 public class WoodItem {
 
 	String type;
-	Double daseDeliveryTime;
+	Double baseDeliveryTime;
 	Double price;
 	
 	/**
@@ -18,7 +18,7 @@ public class WoodItem {
 	 */
 	public WoodItem(){
 		this.type = "Empty";
-		this.daseDeliveryTime = 0.0;
+		this.baseDeliveryTime = 0.0;
 		this.price = 0.0;
 	}
 	
@@ -30,7 +30,7 @@ public class WoodItem {
 	 */
 	public WoodItem(String type, Double daseDeliveryTime, Double price) {
 		this.type = type;
-		this.daseDeliveryTime = daseDeliveryTime;
+		this.baseDeliveryTime = daseDeliveryTime;
 		this.price = price;
 	}
 
@@ -49,7 +49,7 @@ public class WoodItem {
 	 * @return the baseDeliverytime
 	 */
 	public Double getDaseDeliveryTime() {
-		return daseDeliveryTime;
+		return baseDeliveryTime;
 	}
 
 	/**
