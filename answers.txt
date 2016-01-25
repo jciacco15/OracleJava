@@ -1,0 +1,12 @@
+a) 9
+b) Aug 20, 2015
+c) HardwoodSeller.java
+   .classpath
+   .gitattributs
+   .gitignore
+   .project
+d) once
+e) git log shows each commit, and git status shows differences between index file and current head commit
+f) git show main.java
+g) git log --grep=transactions
+h) git log --author=Lauren --after="2015-1-5" --before="2015-2-16"
