@@ -39,6 +39,18 @@ public class HardwoodSeller {
 					woodType.add(appendString);
 					bF.add(Integer.parseInt(s.nextToken()));
 				}
+				else if((word.equals("Genuine"))){
+					String appendString = "Genuine ";
+					appendString += s.nextToken();
+					woodType.add(appendString);
+					bF.add(Integer.parseInt(s.nextToken()));
+				}
+				else if((word.equals("Curly"))){
+					String appendString = "Curly ";
+					appendString += s.nextToken();
+					woodType.add(appendString);
+					bF.add(Integer.parseInt(s.nextToken()));
+				}
 				else{
 					woodType.add(word);
 					bF.add(Integer.parseInt(s.nextToken()));
@@ -58,11 +70,40 @@ public class HardwoodSeller {
 				System.out.println(bF.get(j));
 			}
 			
-				
+			calculate(woodType, bF, firstLine);
 		}
 		
 		
 	
+	}
+	
+	public static void calculate(ArrayList<String> wood, ArrayList<Integer> boardFoot, String name){
+		
+		double price = 0;
+		double deliveryTime = 0;
+		for(int i=0; i < wood.size(); i++){
+			if(wood.get(i).equals("Cherry")){
+				price += boardFoot.get(i) * 5.95;
+			}
+			else if(wood.get(i).equals("Wenge")){
+				price += boardFoot.get(i) * 22.35;
+			}
+			else if(wood.get(i).equals("Sawdust")){
+				price += boardFoot.get(i) * 1.5;
+			}
+			else if(wood.get(i).equals("White Oak")){
+				price += boardFoot.get(i) * 6.70;
+			}
+			else if(wood.get(i).equals("Curly Maple")){
+				price += boardFoot.get(i) * 6.00;
+			}
+			else if(wood.get(i).equals("Genuine Mahogany")){
+				price += boardFoot.get(i) * 9.60;
+			}
+		}
+		
+		System.out.println("Price: " + price);
+		
 	}
 	
 }
