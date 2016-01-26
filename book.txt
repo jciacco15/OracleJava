@@ -1,3 +1,7 @@
 I am writing this paragraph for my CEN4021 Software Engineering course. The intention of it is for it to be reviewed and graded 
 by our teaching assistant, Esteban. Another reason for this file, is for the students in the class to get familiar with Git and GitHub. 
 I believe this a truly useful assignment being that GitHub has such high popularity within the computer science world.
+
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working directory clean
